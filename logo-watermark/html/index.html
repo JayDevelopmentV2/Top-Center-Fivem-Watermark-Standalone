@@ -1,0 +1,20 @@
+<div id="logo-watermark">
+  <img src="logo.png" alt="Watermark Logo">
+</div>
+
+
+<style>
+#logo-watermark {
+  position: fixed;
+  top: 10px;                 /* space from top */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;            /* stays on top */
+  pointer-events: none;      /* doesn’t block clicks */
+  opacity: 0.6;              /* transparency */
+}
+
+#logo-watermark img {
+  height: 70px;              /* logo size */
+}
+</style>

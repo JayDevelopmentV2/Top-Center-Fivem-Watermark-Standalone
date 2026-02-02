@@ -1,0 +1,28 @@
+/* Make the page transparent */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+/* Watermark container */
+#watermark {
+  position: fixed;
+  top: 12px;                 /* distance from top */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  pointer-events: none;      /* don’t block clicks */
+  opacity: 0.65;             /* transparency */
+  display: block;
+}
+
+/* Logo image */
+#watermark img {
+  height: 70px;              /* change size here */
+  width: auto;
+  filter: drop-shadow(0 0 6px rgba(0,0,0,0.6));
+}
